@@ -30,3 +30,9 @@ instance biapplyTannen :: (Apply f, Biapply p) => Biapply (Tannen f p) where
 
 instance biapplicativeTannen :: (Applicative f, Biapplicative p) => Biapplicative (Tannen f p) where
   bipure a b = Tannen (pure (bipure a b))
+
+instance semigroupoidTannen :: (Apply f, Semigroupoid p) => Semigroupoid (Tannen f p) where
+  compose (Tannen x) (Tannen y) = Tannen $ lift2 (<<<) x y
+
+instance categoryTannen :: (Applicative f, Category p) => Category (Tannen f p) where
+  identity = Tannen $ pure identity 
