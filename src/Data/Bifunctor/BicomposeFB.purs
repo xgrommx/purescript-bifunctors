@@ -1,4 +1,4 @@
-module BicomposeFB where
+module Data.Bifunctor.BicomposeFB where
 
 import Data.Newtype (class Newtype)
 

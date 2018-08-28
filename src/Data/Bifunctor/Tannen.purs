@@ -1,4 +1,4 @@
-module Tannen where
+module Data.Bifunctor.Tannen where
 
 import Prelude
 

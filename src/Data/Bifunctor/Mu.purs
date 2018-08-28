@@ -1,4 +1,4 @@
-module Mu where
+module Data.Bifunctor.Mu where
 
 import Prelude
 

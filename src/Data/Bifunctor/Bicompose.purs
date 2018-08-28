@@ -1,4 +1,4 @@
-module Bicompose where
+module Data.Bifunctor.Bicompose where
 
 import Prelude
 

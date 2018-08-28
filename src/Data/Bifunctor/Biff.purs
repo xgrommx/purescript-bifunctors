@@ -1,4 +1,4 @@
-module Biff where
+module Data.Bifunctor.Biff where
 
 import Prelude
 
